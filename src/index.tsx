@@ -18,7 +18,7 @@ export const VisionFormItem = (props: {
   return <Form.Item {...{
     label,
     name,
-    rule
+    rules: rule
   }}>
     {props.children}
   </Form.Item>
