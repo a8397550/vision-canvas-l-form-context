@@ -8,17 +8,20 @@ export const VisionFormItem = (props: {
   label?: string;
   name?: string;
   rule?: any[];
+  valuePropName?: string;
   children: React.ReactElement
 }) => {
   const {
     label,
     name,
-    rule
+    rule,
+    valuePropName
   } = props;
   return <Form.Item {...{
     label,
     name,
-    rules: rule
+    rules: rule,
+    valuePropName
   }}>
     {props.children}
   </Form.Item>
